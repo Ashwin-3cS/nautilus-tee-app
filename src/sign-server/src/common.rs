@@ -16,7 +16,7 @@ use serde_repr::{Deserialize_repr, Serialize_repr};
 use std::sync::Arc;
 use tracing::info;
 
-// ── Intent message types (matches Nautilus/Sui pattern) ───────────────
+// ── Intent message types (matches Sui pattern) ───────────────
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct IntentMessage<T: Serialize> {

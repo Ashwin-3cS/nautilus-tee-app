@@ -1,0 +1,1530 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Containerfile
+#1 transferring dockerfile: 4.75kB 0.0s done
+#1 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 22)
+#1 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 49)
+#1 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 100)
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/stagex/linux-nitro@sha256:073c4603686e3bdc0ed6755fee3203f6f6f1512e0ded09eaea8866b002b04264
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/stagex/core-rust@sha256:9be04ac253dabe11367336d29a1582a25535876a1b68fb9508ac85e898d812fd
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/stagex/core-openssl@sha256:8670a22fb76965f31bda1b61cd75ae39a96e1008deffe289a5d94ee4337b1cb2
+#4 DONE 0.1s
+
+#5 [internal] load metadata for docker.io/stagex/core-zlib@sha256:b35b643642153b1620093cfe2963f5fa8e4d194fb2344a5786da5717018976c2
+#5 DONE 0.1s
+
+#6 [internal] load metadata for docker.io/stagex/core-llvm@sha256:bc1c6d67aa73a96dd92f5def7e2701de78b0639d0c815d69110fbb9b3b3e85fe
+#6 DONE 0.1s
+
+#7 [internal] load metadata for docker.io/stagex/user-eif_build@sha256:c1d030fcaa20d26cd144ce992ba4b77665a0e9683f01a92960f9823d39401e41
+#7 DONE 0.1s
+
+#8 [internal] load metadata for docker.io/stagex/core-musl@sha256:d5f86324920cfc7fc34f0163502784b73161543ba0a312030a3ddff3ef8ab2f8
+#8 DONE 0.1s
+
+#9 [internal] load metadata for docker.io/stagex/core-binutils@sha256:83c66e9d7393d7004442f8c1f2ad0f69979cc2a9193222338f4736abf17b6752
+#9 DONE 0.1s
+
+#10 [internal] load metadata for docker.io/stagex/user-cpio@sha256:2695e1b42f93ec3ea0545e270f0fda4adca3cb48d0526da01954efae1bce95c4
+#10 DONE 0.1s
+
+#11 [internal] load metadata for docker.io/stagex/core-gcc@sha256:125bd6306e7f37e57d377d5a189c0e499388aff42b22cc79acee6097357c617f
+#11 DONE 0.1s
+
+#12 [internal] load metadata for docker.io/stagex/user-gen_initramfs@sha256:6c398be1eea26dcee005d11b5c063e1f7cf079710175e5d550d859c685d81825
+#12 DONE 0.1s
+
+#13 [internal] load metadata for docker.io/stagex/core-pkgconf@sha256:fb69c51519edd6aa8e889877b48d2b6874bc5756f72d412908dc629842c46b4a
+#13 DONE 0.1s
+
+#14 [internal] load metadata for docker.io/stagex/core-libzstd@sha256:35ae8f0433cf1472f8fb25e74dc631723e9f458ca3e9544976beb724690adea8
+#14 DONE 0.1s
+
+#15 [internal] load metadata for docker.io/stagex/core-ca-certificates@sha256:d6fca6c0080e8e5360cd85fc1c4bd3eab71ce626f40602e38488bfd61fd3e89d
+#15 DONE 0.1s
+
+#16 [internal] load metadata for docker.io/stagex/core-busybox@sha256:cac5d773db1c69b832d022c469ccf5f52daf223b91166e6866d42d6983a3b374
+#16 DONE 0.1s
+
+#17 [internal] load metadata for docker.io/stagex/core-libunwind@sha256:4f3ead61255c1e58e7dc43a33043f297f8730ec88e068a4460e5fff09e503781
+#17 DONE 0.1s
+
+#18 [internal] load metadata for docker.io/stagex/core-git@sha256:5b0ce8741532026bb7e6f2302855a93057a27a7f38e596e9a7fb0e782f04d0f6
+#18 DONE 0.1s
+
+#19 [internal] load metadata for docker.io/stagex/user-socat:local@sha256:acef3dacc5b805d0eaaae0c2d13f567bf168620aea98c8d3e60ea5fd4e8c3108
+#19 DONE 0.1s
+
+#20 [internal] load metadata for docker.io/stagex/core-cmake:latest
+#20 ...
+
+#21 [internal] load metadata for docker.io/stagex/core-make:latest
+#21 DONE 1.2s
+
+#22 [core-make 1/1] FROM docker.io/stagex/core-make:latest@sha256:45523d7f448c58a2a1159b578a0c838010dac9b9a59bdd02f1e4dc533e618de6
+#22 resolve docker.io/stagex/core-make:latest@sha256:45523d7f448c58a2a1159b578a0c838010dac9b9a59bdd02f1e4dc533e618de6 0.3s done
+#22 DONE 0.3s
+
+#23 [user-cpio 1/1] FROM docker.io/stagex/user-cpio@sha256:2695e1b42f93ec3ea0545e270f0fda4adca3cb48d0526da01954efae1bce95c4
+#23 resolve docker.io/stagex/user-cpio@sha256:2695e1b42f93ec3ea0545e270f0fda4adca3cb48d0526da01954efae1bce95c4 0.3s done
+#23 DONE 0.3s
+
+#24 [core-gcc 1/1] FROM docker.io/stagex/core-gcc@sha256:125bd6306e7f37e57d377d5a189c0e499388aff42b22cc79acee6097357c617f
+#24 resolve docker.io/stagex/core-gcc@sha256:125bd6306e7f37e57d377d5a189c0e499388aff42b22cc79acee6097357c617f 0.3s done
+#24 DONE 0.3s
+
+#25 [core-cmake 1/1] FROM docker.io/stagex/core-cmake:latest@sha256:64d057d580f26d096603e13d1714619a4eb105a09023f26ce77ec90679bdb5be
+#25 resolve docker.io/stagex/core-cmake:latest@sha256:64d057d580f26d096603e13d1714619a4eb105a09023f26ce77ec90679bdb5be 0.3s done
+#25 DONE 0.3s
+
+#26 [user-eif_build 1/1] FROM docker.io/stagex/user-eif_build@sha256:c1d030fcaa20d26cd144ce992ba4b77665a0e9683f01a92960f9823d39401e41
+#26 resolve docker.io/stagex/user-eif_build@sha256:c1d030fcaa20d26cd144ce992ba4b77665a0e9683f01a92960f9823d39401e41 0.3s done
+#26 DONE 0.3s
+
+#27 [user-gen_initramfs 1/1] FROM docker.io/stagex/user-gen_initramfs@sha256:6c398be1eea26dcee005d11b5c063e1f7cf079710175e5d550d859c685d81825
+#27 resolve docker.io/stagex/user-gen_initramfs@sha256:6c398be1eea26dcee005d11b5c063e1f7cf079710175e5d550d859c685d81825 0.3s done
+#27 DONE 0.3s
+
+#28 [core-pkgconf 1/1] FROM docker.io/stagex/core-pkgconf@sha256:fb69c51519edd6aa8e889877b48d2b6874bc5756f72d412908dc629842c46b4a
+#28 resolve docker.io/stagex/core-pkgconf@sha256:fb69c51519edd6aa8e889877b48d2b6874bc5756f72d412908dc629842c46b4a 0.3s done
+#28 DONE 0.3s
+
+#29 [core-rust 1/1] FROM docker.io/stagex/core-rust@sha256:9be04ac253dabe11367336d29a1582a25535876a1b68fb9508ac85e898d812fd
+#29 resolve docker.io/stagex/core-rust@sha256:9be04ac253dabe11367336d29a1582a25535876a1b68fb9508ac85e898d812fd 0.3s done
+#29 DONE 0.3s
+
+#30 [core-git 1/1] FROM docker.io/stagex/core-git@sha256:5b0ce8741532026bb7e6f2302855a93057a27a7f38e596e9a7fb0e782f04d0f6
+#30 resolve docker.io/stagex/core-git@sha256:5b0ce8741532026bb7e6f2302855a93057a27a7f38e596e9a7fb0e782f04d0f6 0.3s done
+#30 DONE 0.3s
+
+#31 [core-llvm 1/1] FROM docker.io/stagex/core-llvm@sha256:bc1c6d67aa73a96dd92f5def7e2701de78b0639d0c815d69110fbb9b3b3e85fe
+#31 resolve docker.io/stagex/core-llvm@sha256:bc1c6d67aa73a96dd92f5def7e2701de78b0639d0c815d69110fbb9b3b3e85fe 0.3s done
+#31 DONE 0.3s
+
+#32 [core-binutils 1/1] FROM docker.io/stagex/core-binutils@sha256:83c66e9d7393d7004442f8c1f2ad0f69979cc2a9193222338f4736abf17b6752
+#32 resolve docker.io/stagex/core-binutils@sha256:83c66e9d7393d7004442f8c1f2ad0f69979cc2a9193222338f4736abf17b6752 0.3s done
+#32 DONE 0.3s
+
+#33 [core-openssl 1/1] FROM docker.io/stagex/core-openssl@sha256:8670a22fb76965f31bda1b61cd75ae39a96e1008deffe289a5d94ee4337b1cb2
+#33 resolve docker.io/stagex/core-openssl@sha256:8670a22fb76965f31bda1b61cd75ae39a96e1008deffe289a5d94ee4337b1cb2 0.3s done
+#33 DONE 0.3s
+
+#34 [core-libunwind 1/1] FROM docker.io/stagex/core-libunwind@sha256:4f3ead61255c1e58e7dc43a33043f297f8730ec88e068a4460e5fff09e503781
+#34 resolve docker.io/stagex/core-libunwind@sha256:4f3ead61255c1e58e7dc43a33043f297f8730ec88e068a4460e5fff09e503781 0.3s done
+#34 DONE 0.3s
+
+#35 [core-libzstd 1/1] FROM docker.io/stagex/core-libzstd@sha256:35ae8f0433cf1472f8fb25e74dc631723e9f458ca3e9544976beb724690adea8
+#35 resolve docker.io/stagex/core-libzstd@sha256:35ae8f0433cf1472f8fb25e74dc631723e9f458ca3e9544976beb724690adea8 0.3s done
+#35 DONE 0.4s
+
+#36 [core-busybox 1/1] FROM docker.io/stagex/core-busybox@sha256:cac5d773db1c69b832d022c469ccf5f52daf223b91166e6866d42d6983a3b374
+#36 resolve docker.io/stagex/core-busybox@sha256:cac5d773db1c69b832d022c469ccf5f52daf223b91166e6866d42d6983a3b374 0.3s done
+#36 CACHED
+
+#37 [user-linux-nitro 1/1] FROM docker.io/stagex/linux-nitro@sha256:073c4603686e3bdc0ed6755fee3203f6f6f1512e0ded09eaea8866b002b04264
+#37 resolve docker.io/stagex/linux-nitro@sha256:073c4603686e3bdc0ed6755fee3203f6f6f1512e0ded09eaea8866b002b04264 0.2s done
+#37 CACHED
+
+#38 [core-zlib 1/1] FROM docker.io/stagex/core-zlib@sha256:b35b643642153b1620093cfe2963f5fa8e4d194fb2344a5786da5717018976c2
+#38 resolve docker.io/stagex/core-zlib@sha256:b35b643642153b1620093cfe2963f5fa8e4d194fb2344a5786da5717018976c2 0.3s done
+#38 CACHED
+
+#39 [core-musl 1/1] FROM docker.io/stagex/core-musl@sha256:d5f86324920cfc7fc34f0163502784b73161543ba0a312030a3ddff3ef8ab2f8
+#39 resolve docker.io/stagex/core-musl@sha256:d5f86324920cfc7fc34f0163502784b73161543ba0a312030a3ddff3ef8ab2f8 0.3s done
+#39 CACHED
+
+#40 [core-ca-certificates 1/1] FROM docker.io/stagex/core-ca-certificates@sha256:d6fca6c0080e8e5360cd85fc1c4bd3eab71ce626f40602e38488bfd61fd3e89d
+#40 resolve docker.io/stagex/core-ca-certificates@sha256:d6fca6c0080e8e5360cd85fc1c4bd3eab71ce626f40602e38488bfd61fd3e89d 0.3s done
+#40 CACHED
+
+#41 [user-socat 1/1] FROM docker.io/stagex/user-socat:local@sha256:acef3dacc5b805d0eaaae0c2d13f567bf168620aea98c8d3e60ea5fd4e8c3108
+#41 resolve docker.io/stagex/user-socat:local@sha256:acef3dacc5b805d0eaaae0c2d13f567bf168620aea98c8d3e60ea5fd4e8c3108 0.2s done
+#41 CACHED
+
+#42 [install 1/4] WORKDIR /rootfs
+#42 CACHED
+
+#43 [base 20/21] COPY --from=user-linux-nitro /nsm.ko .
+#43 CACHED
+
+#44 [base 15/21] COPY --from=core-gcc . /
+#44 CACHED
+
+#45 [base  8/21] COPY --from=core-binutils . /
+#45 CACHED
+
+#46 [base 17/21] COPY --from=core-make . /
+#46 CACHED
+
+#47 [base 19/21] COPY --from=user-linux-nitro /bzImage .
+#47 CACHED
+
+#48 [base 18/21] COPY --from=user-cpio . /
+#48 CACHED
+
+#49 [base  7/21] COPY --from=core-libzstd . /
+#49 CACHED
+
+#50 [base 16/21] COPY --from=core-cmake . /
+#50 CACHED
+
+#51 [base  1/21] COPY --from=core-busybox . /
+#51 CACHED
+
+#52 [base  3/21] COPY --from=core-libunwind . /
+#52 CACHED
+
+#53 [base  4/21] COPY --from=core-openssl . /
+#53 CACHED
+
+#54 [base  9/21] COPY --from=core-pkgconf . /
+#54 CACHED
+
+#55 [base  2/21] COPY --from=core-musl . /
+#55 CACHED
+
+#56 [base 12/21] COPY --from=user-gen_initramfs . /
+#56 CACHED
+
+#57 [base  6/21] COPY --from=core-ca-certificates . /
+#57 CACHED
+
+#58 [base 10/21] COPY --from=core-git . /
+#58 CACHED
+
+#59 [base  5/21] COPY --from=core-zlib . /
+#59 CACHED
+
+#60 [base 11/21] COPY --from=core-rust . /
+#60 CACHED
+
+#61 [base 13/21] COPY --from=user-eif_build . /
+#61 CACHED
+
+#62 [base 14/21] COPY --from=core-llvm . /
+#62 CACHED
+
+#63 [base 21/21] COPY --from=user-linux-nitro /linux.config .
+#63 CACHED
+
+#20 [internal] load metadata for docker.io/stagex/core-cmake:latest
+#20 DONE 1.3s
+
+#64 [internal] load .dockerignore
+#64 transferring context: 2B 0.0s done
+#64 DONE 0.0s
+
+#65 [internal] load build context
+#65 transferring context: 89.03MB 5.1s
+#65 transferring context: 426.85MB 7.2s done
+#65 DONE 7.2s
+
+#66 [build  1/19] COPY . .
+#66 DONE 1.2s
+
+#67 [build  2/19] RUN cargo build --workspace --no-default-features --release --target x86_64-unknown-linux-musl
+#67 0.389     Updating crates.io index
+#67 0.094     Updating git repository `https://github.com/aws/aws-nitro-enclaves-nsm-api.git/`
+#67 3.596  Downloading crates ...
+#67 3.863   Downloaded cfg-if v1.0.4
+#67 3.994   Downloaded fastrand v2.3.0
+#67 4.004   Downloaded errno v0.3.14
+#67 4.014   Downloaded memoffset v0.7.1
+#67 4.062   Downloaded serde_bytes v0.11.19
+#67 4.126   Downloaded pin-utils v0.1.0
+#67 4.131   Downloaded quote v1.0.45
+#67 4.139   Downloaded autocfg v1.5.0
+#67 4.146   Downloaded itoa v1.0.17
+#67 4.153   Downloaded zmij v1.0.21
+#67 4.161   Downloaded proc-macro2 v1.0.106
+#67 4.174   Downloaded once_cell v1.21.4
+#67 4.183   Downloaded half v1.8.3
+#67 4.192   Downloaded bitflags v1.3.2
+#67 4.204   Downloaded heck v0.4.1
+#67 4.215   Downloaded bitflags v2.11.0
+#67 4.230   Downloaded unicode-ident v1.0.24
+#67 4.242   Downloaded getrandom v0.4.2
+#67 4.255   Downloaded toml v0.5.11
+#67 4.266   Downloaded serde v1.0.228
+#67 4.278   Downloaded serde_core v1.0.228
+#67 4.288   Downloaded memchr v2.8.0
+#67 4.311   Downloaded tempfile v3.27.0
+#67 4.323   Downloaded hashbrown v0.12.3
+#67 4.335   Downloaded serde_derive v1.0.228
+#67 4.348   Downloaded serde_cbor v0.11.2
+#67 4.363   Downloaded serde_json v1.0.149
+#67 4.385   Downloaded log v0.4.29
+#67 4.393   Downloaded indexmap v1.9.3
+#67 4.409   Downloaded cbindgen v0.24.5
+#67 4.602   Downloaded syn v1.0.109
+#67 4.635   Downloaded nix v0.26.4
+#67 4.671   Downloaded syn v2.0.117
+#67 4.705   Downloaded rustix v1.1.4
+#67 4.805   Downloaded libc v0.2.183
+#67 5.084   Downloaded linux-raw-sys v0.12.1
+#67 5.390    Compiling proc-macro2 v1.0.106
+#67 5.391    Compiling serde_core v1.0.228
+#67 5.391    Compiling quote v1.0.45
+#67 5.391    Compiling unicode-ident v1.0.24
+#67 5.392    Compiling autocfg v1.5.0
+#67 5.396    Compiling serde v1.0.228
+#67 5.396    Compiling libc v0.2.183
+#67 5.396    Compiling zmij v1.0.21
+#67 5.397    Compiling rustix v1.1.4
+#67 5.397    Compiling getrandom v0.4.2
+#67 5.397    Compiling syn v1.0.109
+#67 5.417    Compiling cfg-if v1.0.4
+#67 5.684    Compiling linux-raw-sys v0.12.1
+#67 5.956    Compiling serde_json v1.0.149
+#67 6.237    Compiling bitflags v2.11.0
+#67 6.342    Compiling itoa v1.0.17
+#67 6.541    Compiling once_cell v1.21.4
+#67 6.768    Compiling cbindgen v0.24.5
+#67 6.879    Compiling hashbrown v0.12.3
+#67 7.026    Compiling memchr v2.8.0
+#67 7.098    Compiling indexmap v1.9.3
+#67 7.290    Compiling memoffset v0.7.1
+#67 7.402    Compiling fastrand v2.3.0
+#67 8.002    Compiling log v0.4.29
+#67 8.154    Compiling heck v0.4.1
+#67 8.481    Compiling bitflags v1.3.2
+#67 8.754    Compiling half v1.8.3
+#67 8.821    Compiling syn v2.0.117
+#67 9.125    Compiling pin-utils v0.1.0
+#67 12.98    Compiling tempfile v3.27.0
+#67 13.66    Compiling nix v0.26.4
+#67 13.67    Compiling system v0.1.0 (/src/system)
+#67 13.83    Compiling serde_derive v1.0.228
+#67 14.38    Compiling serde_bytes v0.11.19
+#67 20.61    Compiling toml v0.5.11
+#67 20.78    Compiling serde_cbor v0.11.2
+#67 22.86    Compiling aws-nitro-enclaves-nsm-api v0.4.0 (https://github.com/aws/aws-nitro-enclaves-nsm-api.git/?rev=8ec7eac72bbb2097f1058ee32c13e1ff232f13e8#8ec7eac7)
+#67 29.13    Compiling nsm-lib v0.4.0 (https://github.com/aws/aws-nitro-enclaves-nsm-api.git/?rev=8ec7eac72bbb2097f1058ee32c13e1ff232f13e8#8ec7eac7)
+#67 38.20    Compiling aws v0.1.0 (/src/aws)
+#67 38.36    Compiling init v0.1.0 (/src/init)
+#67 38.89     Finished `release` profile [optimized] target(s) in 41.36s
+#67 DONE 40.5s
+
+#68 [build  3/19] WORKDIR /src/sign-server
+#68 DONE 0.2s
+
+#69 [build  4/19] RUN cargo build --release --target x86_64-unknown-linux-musl --features aws
+#69 0.403     Updating crates.io index
+#69 0.404     Updating git repository `https://github.com/MystenLabs/fastcrypto`
+#69 9.858  Downloading crates ...
+#69 10.17   Downloaded ark-secp256r1 v0.4.0
+#69 10.18   Downloaded auto_ops v0.3.0
+#69 10.20   Downloaded atomic-waker v1.1.2
+#69 10.28   Downloaded ark-serialize-derive v0.4.2
+#69 10.31   Downloaded ark-ff-asm v0.4.2
+#69 10.35   Downloaded base16ct v0.2.0
+#69 10.40   Downloaded convert_case v0.4.0
+#69 10.42   Downloaded crypto-common v0.1.6
+#69 10.43   Downloaded block-buffer v0.9.0
+#69 10.44   Downloaded keccak v0.1.6
+#69 10.44   Downloaded block-buffer v0.10.4
+#69 10.46   Downloaded curve25519-dalek-derive v0.1.1
+#69 10.47   Downloaded futures-sink v0.3.32
+#69 10.47   Downloaded futures-core v0.3.32
+#69 10.48   Downloaded ed25519-consensus v2.1.0
+#69 10.48   Downloaded dyn-clone v1.0.20
+#69 10.49   Downloaded darling_macro v0.20.10
+#69 10.51   Downloaded futures-task v0.3.32
+#69 10.52   Downloaded ident_case v1.0.1
+#69 10.52   Downloaded lazy_static v1.5.0
+#69 10.53   Downloaded mime v0.3.17
+#69 10.53   Downloaded httpdate v1.0.3
+#69 10.53   Downloaded http-body v1.0.1
+#69 10.54   Downloaded hex v0.4.3
+#69 10.54   Downloaded hex-literal v0.4.1
+#69 10.54   Downloaded clear_on_drop v0.2.5
+#69 10.55   Downloaded digest v0.9.0
+#69 10.56   Downloaded cpufeatures v0.2.17
+#69 10.57   Downloaded opaque-debug v0.3.1
+#69 10.59   Downloaded merlin v3.0.0
+#69 10.60   Downloaded powerfmt v0.2.0
+#69 10.60   Downloaded rustversion v1.0.22
+#69 10.60   Downloaded fnv v1.0.7
+#69 10.61   Downloaded bincode v1.3.3
+#69 10.62   Downloaded serde_repr v0.1.20
+#69 10.62   Downloaded matchit v0.7.3
+#69 10.63   Downloaded group v0.13.0
+#69 10.63   Downloaded http-body-util v0.1.3
+#69 10.64   Downloaded nu-ansi-term v0.50.3
+#69 10.64   Downloaded num-integer v0.1.46
+#69 10.65   Downloaded generic-array v0.14.9
+#69 10.65   Downloaded either v1.15.0
+#69 10.65   Downloaded darling v0.20.10
+#69 10.66   Downloaded bech32 v0.9.1
+#69 10.66   Downloaded find-msvc-tools v0.1.9
+#69 10.67   Downloaded ff v0.13.1
+#69 10.67   Downloaded num-iter v0.1.45
+#69 10.67   Downloaded deranged v0.5.8
+#69 10.68   Downloaded bs58 v0.4.0
+#69 10.69   Downloaded rand_core v0.6.4
+#69 10.69   Downloaded ahash v0.8.12
+#69 10.70   Downloaded blake2 v0.10.6
+#69 10.70   Downloaded ecdsa v0.16.9
+#69 10.71   Downloaded const-oid v0.9.6
+#69 10.71   Downloaded getrandom v0.2.17
+#69 10.72   Downloaded httparse v1.10.1
+#69 10.73   Downloaded hmac v0.12.1
+#69 10.73   Downloaded num-traits v0.2.19
+#69 10.74   Downloaded futures-channel v0.3.32
+#69 10.75   Downloaded subtle-ng v2.5.0
+#69 10.75   Downloaded p256 v0.13.2
+#69 10.76   Downloaded elliptic-curve v0.13.8
+#69 10.77   Downloaded percent-encoding v2.3.2
+#69 10.77   Downloaded tower-service v0.3.3
+#69 10.78   Downloaded base64 v0.22.1
+#69 10.79   Downloaded zeroize_derive v1.4.3
+#69 10.79   Downloaded bytes v1.11.1
+#69 10.80   Downloaded version_check v0.9.5
+#69 10.80   Downloaded ark-ff v0.4.2
+#69 10.81   Downloaded darling_core v0.20.10
+#69 10.82   Downloaded strsim v0.11.1
+#69 10.82   Downloaded iana-time-zone v0.1.65
+#69 10.83   Downloaded derive_more v0.99.20
+#69 10.84   Downloaded derivative v2.2.0
+#69 10.85   Downloaded ark-ec v0.4.2
+#69 10.86   Downloaded der v0.7.10
+#69 10.88   Downloaded rustc_version v0.4.1
+#69 10.88   Downloaded hashbrown v0.13.2
+#69 10.89   Downloaded num-bigint v0.4.6
+#69 10.90   Downloaded num-bigint-dig v0.8.6
+#69 10.91   Downloaded itertools v0.10.5
+#69 10.92   Downloaded libm v0.2.16
+#69 10.94   Downloaded cc v1.2.57
+#69 10.95   Downloaded mio v1.1.1
+#69 10.96   Downloaded hkdf v0.12.4
+#69 10.97   Downloaded h2 v0.4.13
+#69 10.98   Downloaded futures-util v0.3.32
+#69 11.00   Downloaded axum v0.7.9
+#69 11.02   Downloaded hyper-util v0.1.20
+#69 11.03   Downloaded http v1.4.0
+#69 11.04   Downloaded sync_wrapper v1.0.2
+#69 11.04   Downloaded crypto-bigint v0.5.5
+#69 11.05   Downloaded bitcoin_hashes v0.12.0
+#69 11.06   Downloaded byteorder v1.5.0
+#69 11.06   Downloaded ark-poly v0.4.2
+#69 11.07   Downloaded digest v0.10.7
+#69 11.07   Downloaded pem-rfc7468 v0.7.0
+#69 11.08   Downloaded axum-core v0.4.5
+#69 11.08   Downloaded bcs v0.1.6
+#69 11.08   Downloaded base64ct v1.8.3
+#69 11.09   Downloaded bitcoin-private v0.1.0
+#69 11.09   Downloaded async-trait v0.1.89
+#69 11.10   Downloaded ark-std v0.4.0
+#69 11.10   Downloaded num-conv v0.2.0
+#69 11.11   Downloaded ark-serialize v0.4.2
+#69 11.11   Downloaded ark-secp256k1 v0.4.0
+#69 11.11   Downloaded ark-ff-macros v0.4.2
+#69 11.13   Downloaded readonly v0.2.13
+#69 11.13   Downloaded rfc6979 v0.4.0
+#69 11.14   Downloaded time-core v0.1.8
+#69 11.18   Downloaded hyper v1.8.1
+#69 11.20   Downloaded subtle v2.6.1
+#69 11.20   Downloaded chrono v0.4.44
+#69 11.22   Downloaded curve25519-dalek v4.1.3
+#69 11.24   Downloaded blst v0.3.16
+#69 11.27   Downloaded curve25519-dalek-ng v4.1.1
+#69 11.33   Downloaded rand_chacha v0.3.1
+#69 11.42   Downloaded bulletproofs v5.0.0
+#69 11.46   Downloaded signature v2.2.0
+#69 11.50   Downloaded slab v0.4.12
+#69 11.50   Downloaded serde_with_macros v3.11.0
+#69 11.51   Downloaded paste v1.0.15
+#69 11.51   Downloaded serde_derive_internals v0.29.1
+#69 11.52   Downloaded schemars_derive v0.8.22
+#69 11.54   Downloaded sha2 v0.9.9
+#69 11.54   Downloaded sec1 v0.7.3
+#69 11.61   Downloaded time-macros v0.2.27
+#69 11.62   Downloaded primeorder v0.13.6
+#69 11.64   Downloaded thiserror-impl v1.0.69
+#69 11.64   Downloaded thiserror v1.0.69
+#69 11.68   Downloaded ppv-lite86 v0.2.21
+#69 11.68   Downloaded tokio-macros v2.6.1
+#69 11.72   Downloaded pin-project-lite v0.2.17
+#69 11.74   Downloaded static_assertions v1.1.0
+#69 11.75   Downloaded pkcs8 v0.10.2
+#69 11.90   Downloaded shlex v1.3.0
+#69 11.91   Downloaded sha2 v0.10.9
+#69 11.91   Downloaded serde_path_to_error v0.1.20
+#69 12.00   Downloaded spki v0.7.3
+#69 12.02   Downloaded zeroize v1.8.2
+#69 12.06   Downloaded tower-layer v0.3.3
+#69 12.07   Downloaded tracing-attributes v0.1.31
+#69 12.09   Downloaded pkcs1 v0.7.5
+#69 12.13   Downloaded thread_local v1.1.9
+#69 12.28   Downloaded schemars v0.8.22
+#69 12.35   Downloaded smallvec v1.15.1
+#69 12.42   Downloaded tracing-log v0.2.0
+#69 12.43   Downloaded spin v0.9.8
+#69 12.58   Downloaded sharded-slab v0.1.7
+#69 12.64   Downloaded socket2 v0.6.3
+#69 12.68   Downloaded tracing-core v0.1.36
+#69 12.86   Downloaded secp256k1 v0.27.0
+#69 12.97   Downloaded rsa v0.9.10
+#69 13.03   Downloaded typenum v1.19.0
+#69 13.11   Downloaded rand v0.8.5
+#69 13.12   Downloaded tower v0.5.3
+#69 13.25   Downloaded tower-http v0.5.2
+#69 13.66   Downloaded serde_with v3.11.0
+#69 13.81   Downloaded tokio-util v0.7.18
+#69 14.08   Downloaded time v0.3.47
+#69 14.16   Downloaded tracing-subscriber v0.3.23
+#69 14.23   Downloaded zerocopy v0.8.42
+#69 15.09   Downloaded tracing v0.1.44
+#69 16.06   Downloaded sha3 v0.10.8
+#69 16.09   Downloaded tokio v1.50.0
+#69 15.91   Downloaded secp256k1-sys v0.8.2
+#69 16.14    Compiling proc-macro2 v1.0.106
+#69 16.14    Compiling quote v1.0.45
+#69 16.14    Compiling unicode-ident v1.0.24
+#69 16.14    Compiling serde_core v1.0.228
+#69 16.14    Compiling libc v0.2.183
+#69 16.14    Compiling serde v1.0.228
+#69 16.14    Compiling version_check v0.9.5
+#69 16.14    Compiling cfg-if v1.0.4
+#69 16.15    Compiling typenum v1.19.0
+#69 16.15    Compiling autocfg v1.5.0
+#69 16.15    Compiling const-oid v0.9.6
+#69 16.15    Compiling subtle v2.6.1
+#69 16.25    Compiling zerocopy v0.8.42
+#69 16.27    Compiling libm v0.2.16
+#69 16.36    Compiling once_cell v1.21.4
+#69 16.45    Compiling syn v1.0.109
+#69 16.50    Compiling itoa v1.0.17
+#69 16.58    Compiling find-msvc-tools v0.1.9
+#69 16.60    Compiling generic-array v0.14.9
+#69 16.67    Compiling bytes v1.11.1
+#69 16.73    Compiling num-traits v0.2.19
+#69 16.78    Compiling shlex v1.3.0
+#69 16.92    Compiling pin-project-lite v0.2.17
+#69 16.92    Compiling base64ct v1.8.3
+#69 17.03    Compiling cc v1.2.57
+#69 17.09    Compiling futures-core v0.3.32
+#69 17.16    Compiling tracing-core v0.1.36
+#69 17.27    Compiling ahash v0.8.12
+#69 17.43    Compiling pem-rfc7468 v0.7.0
+#69 17.79    Compiling syn v2.0.117
+#69 17.82    Compiling http v1.4.0
+#69 18.05    Compiling paste v1.0.15
+#69 18.18    Compiling cpufeatures v0.2.17
+#69 18.34    Compiling slab v0.4.12
+#69 18.51    Compiling ident_case v1.0.1
+#69 18.68    Compiling fnv v1.0.7
+#69 18.69    Compiling smallvec v1.15.1
+#69 18.78    Compiling either v1.15.0
+#69 18.95    Compiling num-integer v0.1.46
+#69 19.05    Compiling strsim v0.11.1
+#69 19.17    Compiling itertools v0.10.5
+#69 19.49    Compiling num-bigint v0.4.6
+#69 19.53    Compiling http-body v1.0.1
+#69 19.56    Compiling base16ct v0.2.0
+#69 19.74    Compiling getrandom v0.2.17
+#69 19.79    Compiling socket2 v0.6.3
+#69 19.81    Compiling mio v1.1.1
+#69 20.11    Compiling rand_core v0.6.4
+#69 20.14    Compiling thiserror v1.0.69
+#69 20.48    Compiling ff v0.13.1
+#69 20.55    Compiling semver v1.0.27
+#69 20.63    Compiling spin v0.9.8
+#69 20.71    Compiling group v0.13.0
+#69 20.75    Compiling zmij v1.0.21
+#69 20.81    Compiling lazy_static v1.5.0
+#69 20.99    Compiling rustc_version v0.4.1
+#69 21.02    Compiling equivalent v1.0.2
+#69 21.09    Compiling pin-utils v0.1.0
+#69 21.12    Compiling futures-sink v0.3.32
+#69 21.14    Compiling hashbrown v0.16.1
+#69 21.15    Compiling bitcoin-private v0.1.0
+#69 21.17    Compiling byteorder v1.5.0
+#69 21.19    Compiling httparse v1.10.1
+#69 21.27    Compiling tower-service v0.3.3
+#69 21.28    Compiling serde_json v1.0.149
+#69 21.49    Compiling curve25519-dalek v4.1.3
+#69 21.58    Compiling secp256k1-sys v0.8.2
+#69 21.58    Compiling clear_on_drop v0.2.5
+#69 21.78    Compiling memoffset v0.7.1
+#69 21.93    Compiling keccak v0.1.6
+#69 22.00    Compiling rustversion v1.0.22
+#69 22.07    Compiling atomic-waker v1.1.2
+#69 22.11    Compiling tower-layer v0.3.3
+#69 22.12    Compiling memchr v2.8.0
+#69 22.18    Compiling num-bigint-dig v0.8.6
+#69 22.23    Compiling futures-task v0.3.32
+#69 22.43    Compiling futures-util v0.3.32
+#69 22.44    Compiling indexmap v2.13.0
+#69 23.29    Compiling num-iter v0.1.45
+#69 23.37    Compiling http-body-util v0.1.3
+#69 23.44    Compiling num_cpus v1.17.0
+#69 23.65    Compiling blst v0.3.16
+#69 23.68    Compiling futures-channel v0.3.32
+#69 23.78    Compiling sync_wrapper v1.0.2
+#69 23.98    Compiling log v0.4.29
+#69 23.98    Compiling opaque-debug v0.3.1
+#69 24.05    Compiling subtle-ng v2.5.0
+#69 24.10    Compiling schemars v0.8.22
+#69 24.26    Compiling httpdate v1.0.3
+#69 24.34    Compiling threadpool v1.8.1
+#69 24.43    Compiling bitcoin_hashes v0.12.0
+#69 24.56    Compiling darling_core v0.20.10
+#69 24.69    Compiling ppv-lite86 v0.2.21
+#69 25.28    Compiling hashbrown v0.13.2
+#69 25.29    Compiling rand_chacha v0.3.1
+#69 25.33    Compiling serde_derive_internals v0.29.1
+#69 26.22    Compiling rand v0.8.5
+#69 26.98    Compiling dyn-clone v1.0.20
+#69 27.50    Compiling convert_case v0.4.0
+#69 27.57    Compiling mime v0.3.17
+#69 27.68    Compiling half v1.8.3
+#69 27.78    Compiling ark-serialize-derive v0.4.2
+#69 28.09    Compiling ark-ff-asm v0.4.2
+#69 28.16    Compiling ark-std v0.4.0
+#69 28.27    Compiling ark-ff-macros v0.4.2
+#69 28.28    Compiling derivative v2.2.0
+#69 28.31    Compiling anyhow v1.0.102
+#69 28.58    Compiling hex v0.4.3
+#69 28.70    Compiling serde_derive v1.0.228
+#69 28.71    Compiling zeroize_derive v1.4.3
+#69 28.76    Compiling tokio-macros v2.6.1
+#69 28.76    Compiling tracing-attributes v0.1.31
+#69 29.13    Compiling thiserror-impl v1.0.69
+#69 29.28    Compiling curve25519-dalek-derive v0.1.1
+#69 29.58    Compiling schemars_derive v0.8.22
+#69 29.95    Compiling darling_macro v0.20.10
+#69 29.97    Compiling zeroize v1.8.2
+#69 30.19    Compiling async-trait v0.1.89
+#69 30.26    Compiling der v0.7.10
+#69 30.27    Compiling tokio v1.50.0
+#69 30.55    Compiling merlin v3.0.0
+#69 31.01    Compiling darling v0.20.10
+#69 31.16    Compiling serde_with_macros v3.11.0
+#69 31.38    Compiling tracing v0.1.44
+#69 31.58    Compiling bitflags v1.3.2
+#69 31.66    Compiling nix v0.26.4
+#69 32.20    Compiling readonly v0.2.13
+#69 32.23    Compiling spki v0.7.3
+#69 32.29    Compiling axum-core v0.4.5
+#69 32.54    Compiling pkcs8 v0.10.2
+#69 33.26    Compiling pkcs1 v0.7.5
+#69 33.35    Compiling derive_more v0.99.20
+#69 33.84    Compiling fastcrypto-derive v0.1.3 (https://github.com/MystenLabs/fastcrypto#c141d4c2)
+#69 34.05    Compiling tracing-log v0.2.0
+#69 34.53    Compiling serde_path_to_error v0.1.20
+#69 34.93    Compiling serde_bytes v0.11.19
+#69 35.36    Compiling sharded-slab v0.1.7
+#69 35.41    Compiling thread_local v1.1.9
+#69 35.46    Compiling percent-encoding v2.3.2
+#69 35.59    Compiling auto_ops v0.3.0
+#69 35.73    Compiling bs58 v0.4.0
+#69 35.74    Compiling static_assertions v1.1.0
+#69 35.88    Compiling serde_with v3.11.0
+#69 35.94    Compiling serde_cbor v0.11.2
+#69 36.05    Compiling bcs v0.1.6
+#69 36.15    Compiling bincode v1.3.3
+#69 36.68    Compiling secp256k1 v0.27.0
+#69 36.79    Compiling bech32 v0.9.1
+#69 36.97    Compiling matchit v0.7.3
+#69 37.10    Compiling block-buffer v0.10.4
+#69 37.33    Compiling crypto-common v0.1.6
+#69 37.45    Compiling sec1 v0.7.3
+#69 37.53    Compiling crypto-bigint v0.5.5
+#69 37.58    Compiling digest v0.10.7
+#69 37.68    Compiling digest v0.9.0
+#69 37.79    Compiling block-buffer v0.9.0
+#69 37.88    Compiling tokio-util v0.7.18
+#69 37.98    Compiling ark-serialize v0.4.2
+#69 37.99    Compiling hmac v0.12.1
+#69 38.24    Compiling signature v2.2.0
+#69 38.50    Compiling ark-ff v0.4.2
+#69 38.57    Compiling rfc6979 v0.4.0
+#69 38.92    Compiling sha2 v0.10.9
+#69 39.17    Compiling h2 v0.4.13
+#69 39.50    Compiling sha3 v0.10.8
+#69 39.67    Compiling sha2 v0.9.9
+#69 40.16    Compiling curve25519-dalek-ng v4.1.1
+#69 40.25    Compiling rsa v0.9.10
+#69 40.35    Compiling hkdf v0.12.4
+#69 40.72    Compiling elliptic-curve v0.13.8
+#69 40.78    Compiling blake2 v0.10.6
+#69 41.59    Compiling ecdsa v0.16.9
+#69 41.63    Compiling primeorder v0.13.6
+#69 41.68    Compiling ed25519-consensus v2.1.0
+#69 41.84    Compiling bulletproofs v5.0.0
+#69 42.40    Compiling tower v0.5.3
+#69 42.49    Compiling nu-ansi-term v0.50.3
+#69 42.84    Compiling p256 v0.13.2
+#69 43.02    Compiling bitflags v2.11.0
+#69 43.07    Compiling iana-time-zone v0.1.65
+#69 43.09    Compiling hex-literal v0.4.1
+#69 43.34    Compiling tracing-subscriber v0.3.23
+#69 43.42    Compiling chrono v0.4.44
+#69 43.44    Compiling tower-http v0.5.2
+#69 43.47    Compiling aws-nitro-enclaves-nsm-api v0.4.0 (https://github.com/aws/aws-nitro-enclaves-nsm-api?rev=8ec7eac72bbb2097f1058ee32c13e1ff232f13e8#8ec7eac7)
+#69 43.87    Compiling serde_repr v0.1.20
+#69 45.20    Compiling hyper v1.8.1
+#69 45.95    Compiling hyper-util v0.1.20
+#69 46.42    Compiling axum v0.7.9
+#69 49.29    Compiling ark-poly v0.4.2
+#69 50.42    Compiling ark-ec v0.4.2
+#69 52.20    Compiling ark-secp256r1 v0.4.0
+#69 52.20    Compiling ark-secp256k1 v0.4.0
+#69 52.45    Compiling fastcrypto v0.1.9 (https://github.com/MystenLabs/fastcrypto#c141d4c2)
+#69 57.23    Compiling sign_server v0.1.0 (/src/sign-server)
+#69 84.80     Finished `release` profile [optimized] target(s) in 1m 28s
+#69 DONE 85.4s
+
+#70 [build  5/19] WORKDIR /build_cpio
+#70 DONE 0.1s
+
+#71 [build  6/19] RUN mkdir initramfs/
+#71 DONE 0.2s
+
+#72 [build  7/19] COPY --from=user-linux-nitro /nsm.ko initramfs/nsm.ko
+#72 DONE 0.0s
+
+#73 [build  8/19] COPY --from=core-busybox . initramfs
+#73 DONE 0.1s
+
+#74 [build  9/19] COPY --from=core-musl . initramfs
+#74 DONE 0.2s
+
+#75 [build 10/19] COPY --from=core-zlib . initramfs
+#75 DONE 0.1s
+
+#76 [build 11/19] COPY --from=core-ca-certificates /etc/ssl/certs initramfs/etc/ssl/certs/
+#76 DONE 0.0s
+
+#77 [build 12/19] COPY --from=core-busybox /bin/sh initramfs/sh
+#77 DONE 0.0s
+
+#78 [build 13/19] COPY --from=user-socat /bin/socat initramfs/
+#78 DONE 0.1s
+
+#79 [build 14/19] RUN cp /target/x86_64-unknown-linux-musl/release/init initramfs/
+#79 DONE 0.3s
+
+#80 [build 15/19] RUN cp /src/sign-server/target/x86_64-unknown-linux-musl/release/sign_server initramfs/
+#80 DONE 0.3s
+
+#81 [build 16/19] RUN cp /src/sign-server/run.sh initramfs/
+#81 DONE 0.3s
+
+#82 [build 17/19] RUN <<-EOF (set -eux...)
+#82 0.229 + cd initramfs
+#82 0.230 + find . -exec touch -hcd @0 '{}' +
+#82 1.097 + find . -print0
+#82 1.097 + sort -z
+#82 1.097 + cpio --null --create --verbose --reproducible '--format=newc'
+#82 1.098 + gzip --best
+#82 1.103 .
+#82 1.103 ./bin
+#82 1.103 ./etc
+#82 1.103 ./etc/group
+#82 1.103 ./etc/os-release
+#82 1.103 ./etc/passwd
+#82 1.103 ./etc/ssl
+#82 1.103 ./etc/ssl/certs
+#82 1.109 ./etc/ssl/certs/ca-certificates.crt
+#82 1.109 ./home
+#82 1.109 ./home/user
+#82 1.159 ./init
+#82 1.159 ./lib
+#82 1.159 ./lib64
+#82 1.160 ./nsm.ko
+#82 1.160 ./root
+#82 1.160 ./run.sh
+#82 1.160 ./sbin
+#82 1.233 ./sh
+#82 1.362 ./sign_server
+#82 1.394 ./socat
+#82 1.394 ./tmp
+#82 1.394 ./usr
+#82 1.394 ./usr/bin
+#82 1.394 ./usr/bin/[
+#82 1.394 ./usr/bin/[[
+#82 1.394 ./usr/bin/acpid
+#82 1.394 ./usr/bin/add-shell
+#82 1.396 ./usr/bin/addgroup
+#82 1.396 ./usr/bin/adduser
+#82 1.396 ./usr/bin/adjtimex
+#82 1.398 ./usr/bin/arch
+#82 1.398 ./usr/bin/arp
+#82 1.398 ./usr/bin/arping
+#82 1.399 ./usr/bin/ascii
+#82 1.413 ./usr/bin/ash
+#82 1.413 ./usr/bin/awk
+#82 1.413 ./usr/bin/base32
+#82 1.413 ./usr/bin/base64
+#82 1.413 ./usr/bin/basename
+#82 1.413 ./usr/bin/bc
+#82 1.413 ./usr/bin/beep
+#82 1.413 ./usr/bin/blkdiscard
+#82 1.413 ./usr/bin/blkid
+#82 1.413 ./usr/bin/blockdev
+#82 1.413 ./usr/bin/bootchartd
+#82 1.413 ./usr/bin/brctl
+#82 1.413 ./usr/bin/bunzip2
+#82 1.490 ./usr/bin/busybox
+#82 1.490 ./usr/bin/bzcat
+#82 1.490 ./usr/bin/bzip2
+#82 1.490 ./usr/bin/cal
+#82 1.490 ./usr/bin/cat
+#82 1.490 ./usr/bin/chat
+#82 1.490 ./usr/bin/chattr
+#82 1.490 ./usr/bin/chgrp
+#82 1.490 ./usr/bin/chmod
+#82 1.490 ./usr/bin/chown
+#82 1.490 ./usr/bin/chpasswd
+#82 1.491 ./usr/bin/chpst
+#82 1.491 ./usr/bin/chroot
+#82 1.491 ./usr/bin/chrt
+#82 1.491 ./usr/bin/chvt
+#82 1.491 ./usr/bin/cksum
+#82 1.491 ./usr/bin/clear
+#82 1.491 ./usr/bin/cmp
+#82 1.491 ./usr/bin/comm
+#82 1.491 ./usr/bin/conspy
+#82 1.491 ./usr/bin/cp
+#82 1.491 ./usr/bin/cpio
+#82 1.491 ./usr/bin/crc32
+#82 1.491 ./usr/bin/crond
+#82 1.491 ./usr/bin/crontab
+#82 1.491 ./usr/bin/cryptpw
+#82 1.491 ./usr/bin/cttyhack
+#82 1.491 ./usr/bin/cut
+#82 1.491 ./usr/bin/date
+#82 1.491 ./usr/bin/dc
+#82 1.491 ./usr/bin/dd
+#82 1.491 ./usr/bin/deallocvt
+#82 1.491 ./usr/bin/delgroup
+#82 1.491 ./usr/bin/deluser
+#82 1.491 ./usr/bin/depmod
+#82 1.491 ./usr/bin/devmem
+#82 1.491 ./usr/bin/df
+#82 1.491 ./usr/bin/dhcprelay
+#82 1.491 ./usr/bin/diff
+#82 1.491 ./usr/bin/dirname
+#82 1.491 ./usr/bin/dmesg
+#82 1.491 ./usr/bin/dnsd
+#82 1.491 ./usr/bin/dnsdomainname
+#82 1.491 ./usr/bin/dos2unix
+#82 1.491 ./usr/bin/dpkg
+#82 1.491 ./usr/bin/dpkg-deb
+#82 1.491 ./usr/bin/du
+#82 1.491 ./usr/bin/dumpkmap
+#82 1.491 ./usr/bin/dumpleases
+#82 1.491 ./usr/bin/echo
+#82 1.491 ./usr/bin/ed
+#82 1.491 ./usr/bin/egrep
+#82 1.491 ./usr/bin/eject
+#82 1.491 ./usr/bin/env
+#82 1.491 ./usr/bin/envdir
+#82 1.491 ./usr/bin/envuidgid
+#82 1.491 ./usr/bin/ether-wake
+#82 1.491 ./usr/bin/expand
+#82 1.491 ./usr/bin/expr
+#82 1.492 ./usr/bin/factor
+#82 1.492 ./usr/bin/fakeidentd
+#82 1.492 ./usr/bin/fallocate
+#82 1.492 ./usr/bin/false
+#82 1.493 ./usr/bin/fatattr
+#82 1.493 ./usr/bin/fbset
+#82 1.493 ./usr/bin/fbsplash
+#82 1.493 ./usr/bin/fdflush
+#82 1.493 ./usr/bin/fdformat
+#82 1.493 ./usr/bin/fdisk
+#82 1.493 ./usr/bin/fgconsole
+#82 1.493 ./usr/bin/fgrep
+#82 1.493 ./usr/bin/find
+#82 1.493 ./usr/bin/findfs
+#82 1.493 ./usr/bin/flock
+#82 1.493 ./usr/bin/fold
+#82 1.493 ./usr/bin/free
+#82 1.493 ./usr/bin/freeramdisk
+#82 1.493 ./usr/bin/fsck
+#82 1.493 ./usr/bin/fsck.minix
+#82 1.493 ./usr/bin/fsfreeze
+#82 1.493 ./usr/bin/fstrim
+#82 1.493 ./usr/bin/fsync
+#82 1.493 ./usr/bin/ftpd
+#82 1.493 ./usr/bin/ftpget
+#82 1.493 ./usr/bin/ftpput
+#82 1.493 ./usr/bin/fuser
+#82 1.493 ./usr/bin/getopt
+#82 1.493 ./usr/bin/getty
+#82 1.493 ./usr/bin/grep
+#82 1.493 ./usr/bin/groups
+#82 1.493 ./usr/bin/gunzip
+#82 1.493 ./usr/bin/gzip
+#82 1.493 ./usr/bin/halt
+#82 1.493 ./usr/bin/hd
+#82 1.493 ./usr/bin/hdparm
+#82 1.493 ./usr/bin/head
+#82 1.493 ./usr/bin/hexdump
+#82 1.493 ./usr/bin/hexedit
+#82 1.493 ./usr/bin/hostid
+#82 1.493 ./usr/bin/hostname
+#82 1.493 ./usr/bin/httpd
+#82 1.493 ./usr/bin/hush
+#82 1.493 ./usr/bin/hwclock
+#82 1.493 ./usr/bin/i2cdetect
+#82 1.493 ./usr/bin/i2cdump
+#82 1.493 ./usr/bin/i2cget
+#82 1.493 ./usr/bin/i2cset
+#82 1.493 ./usr/bin/i2ctransfer
+#82 1.493 ./usr/bin/id
+#82 1.493 ./usr/bin/ifconfig
+#82 1.493 ./usr/bin/ifdown
+#82 1.494 ./usr/bin/ifenslave
+#82 1.494 ./usr/bin/ifplugd
+#82 1.494 ./usr/bin/ifup
+#82 1.494 ./usr/bin/inetd
+#82 1.494 ./usr/bin/init
+#82 1.494 ./usr/bin/insmod
+#82 1.494 ./usr/bin/install
+#82 1.494 ./usr/bin/ionice
+#82 1.494 ./usr/bin/iostat
+#82 1.494 ./usr/bin/ip
+#82 1.494 ./usr/bin/ipaddr
+#82 1.494 ./usr/bin/ipcalc
+#82 1.494 ./usr/bin/ipcrm
+#82 1.494 ./usr/bin/ipcs
+#82 1.494 ./usr/bin/iplink
+#82 1.494 ./usr/bin/ipneigh
+#82 1.494 ./usr/bin/iproute
+#82 1.494 ./usr/bin/iprule
+#82 1.494 ./usr/bin/iptunnel
+#82 1.494 ./usr/bin/kbd_mode
+#82 1.494 ./usr/bin/kill
+#82 1.494 ./usr/bin/killall
+#82 1.494 ./usr/bin/killall5
+#82 1.494 ./usr/bin/klogd
+#82 1.494 ./usr/bin/ldd
+#82 1.494 ./usr/bin/less
+#82 1.494 ./usr/bin/link
+#82 1.494 ./usr/bin/linux32
+#82 1.494 ./usr/bin/linux64
+#82 1.494 ./usr/bin/linuxrc
+#82 1.494 ./usr/bin/ln
+#82 1.494 ./usr/bin/loadfont
+#82 1.494 ./usr/bin/loadkmap
+#82 1.494 ./usr/bin/logger
+#82 1.494 ./usr/bin/login
+#82 1.494 ./usr/bin/logname
+#82 1.494 ./usr/bin/logread
+#82 1.494 ./usr/bin/losetup
+#82 1.494 ./usr/bin/lpd
+#82 1.494 ./usr/bin/lpq
+#82 1.494 ./usr/bin/lpr
+#82 1.494 ./usr/bin/ls
+#82 1.494 ./usr/bin/lsattr
+#82 1.495 ./usr/bin/lsmod
+#82 1.495 ./usr/bin/lsof
+#82 1.495 ./usr/bin/lspci
+#82 1.495 ./usr/bin/lsscsi
+#82 1.495 ./usr/bin/lsusb
+#82 1.495 ./usr/bin/lzcat
+#82 1.495 ./usr/bin/lzma
+#82 1.495 ./usr/bin/lzop
+#82 1.495 ./usr/bin/makedevs
+#82 1.495 ./usr/bin/makemime
+#82 1.495 ./usr/bin/man
+#82 1.495 ./usr/bin/md5sum
+#82 1.495 ./usr/bin/mdev
+#82 1.495 ./usr/bin/mesg
+#82 1.495 ./usr/bin/microcom
+#82 1.495 ./usr/bin/mim
+#82 1.495 ./usr/bin/mkdir
+#82 1.495 ./usr/bin/mkdosfs
+#82 1.495 ./usr/bin/mke2fs
+#82 1.495 ./usr/bin/mkfifo
+#82 1.495 ./usr/bin/mkfs.ext2
+#82 1.495 ./usr/bin/mkfs.minix
+#82 1.495 ./usr/bin/mkfs.vfat
+#82 1.495 ./usr/bin/mknod
+#82 1.495 ./usr/bin/mkpasswd
+#82 1.495 ./usr/bin/mkswap
+#82 1.495 ./usr/bin/mktemp
+#82 1.495 ./usr/bin/modinfo
+#82 1.495 ./usr/bin/modprobe
+#82 1.495 ./usr/bin/more
+#82 1.495 ./usr/bin/mount
+#82 1.495 ./usr/bin/mountpoint
+#82 1.495 ./usr/bin/mpstat
+#82 1.495 ./usr/bin/mt
+#82 1.495 ./usr/bin/mv
+#82 1.495 ./usr/bin/nameif
+#82 1.495 ./usr/bin/nanddump
+#82 1.495 ./usr/bin/nandwrite
+#82 1.495 ./usr/bin/nbd-client
+#82 1.495 ./usr/bin/nc
+#82 1.496 ./usr/bin/netstat
+#82 1.496 ./usr/bin/nice
+#82 1.496 ./usr/bin/nl
+#82 1.496 ./usr/bin/nmeter
+#82 1.496 ./usr/bin/nohup
+#82 1.496 ./usr/bin/nologin
+#82 1.496 ./usr/bin/nproc
+#82 1.496 ./usr/bin/nsenter
+#82 1.496 ./usr/bin/nslookup
+#82 1.496 ./usr/bin/ntpd
+#82 1.496 ./usr/bin/od
+#82 1.496 ./usr/bin/openvt
+#82 1.496 ./usr/bin/partprobe
+#82 1.496 ./usr/bin/passwd
+#82 1.496 ./usr/bin/paste
+#82 1.496 ./usr/bin/patch
+#82 1.496 ./usr/bin/pgrep
+#82 1.496 ./usr/bin/pidof
+#82 1.496 ./usr/bin/ping
+#82 1.496 ./usr/bin/ping6
+#82 1.496 ./usr/bin/pipe_progress
+#82 1.496 ./usr/bin/pivot_root
+#82 1.496 ./usr/bin/pkill
+#82 1.496 ./usr/bin/pmap
+#82 1.496 ./usr/bin/popmaildir
+#82 1.496 ./usr/bin/poweroff
+#82 1.496 ./usr/bin/powertop
+#82 1.496 ./usr/bin/printenv
+#82 1.496 ./usr/bin/printf
+#82 1.496 ./usr/bin/ps
+#82 1.496 ./usr/bin/pscan
+#82 1.496 ./usr/bin/pstree
+#82 1.496 ./usr/bin/pwd
+#82 1.496 ./usr/bin/pwdx
+#82 1.496 ./usr/bin/raidautorun
+#82 1.496 ./usr/bin/rdate
+#82 1.496 ./usr/bin/rdev
+#82 1.496 ./usr/bin/readahead
+#82 1.496 ./usr/bin/readlink
+#82 1.496 ./usr/bin/readprofile
+#82 1.496 ./usr/bin/realpath
+#82 1.496 ./usr/bin/reboot
+#82 1.496 ./usr/bin/reformime
+#82 1.496 ./usr/bin/remove-shell
+#82 1.496 ./usr/bin/renice
+#82 1.496 ./usr/bin/reset
+#82 1.496 ./usr/bin/resize
+#82 1.496 ./usr/bin/resume
+#82 1.496 ./usr/bin/rev
+#82 1.496 ./usr/bin/rm
+#82 1.496 ./usr/bin/rmdir
+#82 1.496 ./usr/bin/rmmod
+#82 1.496 ./usr/bin/route
+#82 1.496 ./usr/bin/rpm
+#82 1.496 ./usr/bin/rpm2cpio
+#82 1.496 ./usr/bin/rtcwake
+#82 1.496 ./usr/bin/run-init
+#82 1.496 ./usr/bin/run-parts
+#82 1.496 ./usr/bin/runsv
+#82 1.497 ./usr/bin/runsvdir
+#82 1.497 ./usr/bin/rx
+#82 1.497 ./usr/bin/script
+#82 1.497 ./usr/bin/scriptreplay
+#82 1.497 ./usr/bin/sed
+#82 1.497 ./usr/bin/seedrng
+#82 1.497 ./usr/bin/sendmail
+#82 1.497 ./usr/bin/seq
+#82 1.497 ./usr/bin/setarch
+#82 1.497 ./usr/bin/setconsole
+#82 1.497 ./usr/bin/setfattr
+#82 1.497 ./usr/bin/setfont
+#82 1.497 ./usr/bin/setkeycodes
+#82 1.497 ./usr/bin/setlogcons
+#82 1.497 ./usr/bin/setpriv
+#82 1.497 ./usr/bin/setserial
+#82 1.497 ./usr/bin/setsid
+#82 1.497 ./usr/bin/setuidgid
+#82 1.497 ./usr/bin/sh
+#82 1.497 ./usr/bin/sha1sum
+#82 1.497 ./usr/bin/sha256sum
+#82 1.497 ./usr/bin/sha3sum
+#82 1.497 ./usr/bin/sha512sum
+#82 1.497 ./usr/bin/showkey
+#82 1.497 ./usr/bin/shred
+#82 1.497 ./usr/bin/shuf
+#82 1.497 ./usr/bin/slattach
+#82 1.497 ./usr/bin/sleep
+#82 1.497 ./usr/bin/smemcap
+#82 1.497 ./usr/bin/softlimit
+#82 1.497 ./usr/bin/sort
+#82 1.497 ./usr/bin/split
+#82 1.497 ./usr/bin/ssl_client
+#82 1.497 ./usr/bin/start-stop-daemon
+#82 1.497 ./usr/bin/stat
+#82 1.497 ./usr/bin/strings
+#82 1.497 ./usr/bin/stty
+#82 1.497 ./usr/bin/su
+#82 1.497 ./usr/bin/sulogin
+#82 1.499 ./usr/bin/sum
+#82 1.499 ./usr/bin/sv
+#82 1.499 ./usr/bin/svc
+#82 1.499 ./usr/bin/svlogd
+#82 1.499 ./usr/bin/svok
+#82 1.499 ./usr/bin/swapoff
+#82 1.499 ./usr/bin/swapon
+#82 1.499 ./usr/bin/switch_root
+#82 1.499 ./usr/bin/sync
+#82 1.499 ./usr/bin/sysctl
+#82 1.499 ./usr/bin/syslogd
+#82 1.499 ./usr/bin/tac
+#82 1.499 ./usr/bin/tail
+#82 1.499 ./usr/bin/tar
+#82 1.499 ./usr/bin/taskset
+#82 1.499 ./usr/bin/tc
+#82 1.499 ./usr/bin/tcpsvd
+#82 1.499 ./usr/bin/tee
+#82 1.499 ./usr/bin/telnet
+#82 1.500 ./usr/bin/telnetd
+#82 1.500 ./usr/bin/test
+#82 1.500 ./usr/bin/tftp
+#82 1.500 ./usr/bin/tftpd
+#82 1.500 ./usr/bin/time
+#82 1.500 ./usr/bin/timeout
+#82 1.500 ./usr/bin/top
+#82 1.500 ./usr/bin/touch
+#82 1.500 ./usr/bin/tr
+#82 1.500 ./usr/bin/traceroute
+#82 1.500 ./usr/bin/traceroute6
+#82 1.500 ./usr/bin/tree
+#82 1.500 ./usr/bin/true
+#82 1.500 ./usr/bin/truncate
+#82 1.500 ./usr/bin/ts
+#82 1.500 ./usr/bin/tsort
+#82 1.500 ./usr/bin/tty
+#82 1.500 ./usr/bin/ttysize
+#82 1.500 ./usr/bin/tunctl
+#82 1.500 ./usr/bin/ubiattach
+#82 1.500 ./usr/bin/ubidetach
+#82 1.500 ./usr/bin/ubimkvol
+#82 1.500 ./usr/bin/ubirename
+#82 1.500 ./usr/bin/ubirmvol
+#82 1.500 ./usr/bin/ubirsvol
+#82 1.500 ./usr/bin/ubiupdatevol
+#82 1.500 ./usr/bin/udhcpc
+#82 1.500 ./usr/bin/udhcpc6
+#82 1.500 ./usr/bin/udhcpd
+#82 1.500 ./usr/bin/udpsvd
+#82 1.500 ./usr/bin/uevent
+#82 1.500 ./usr/bin/umount
+#82 1.500 ./usr/bin/uname
+#82 1.500 ./usr/bin/unexpand
+#82 1.500 ./usr/bin/uniq
+#82 1.500 ./usr/bin/unix2dos
+#82 1.500 ./usr/bin/unlink
+#82 1.500 ./usr/bin/unlzma
+#82 1.500 ./usr/bin/unshare
+#82 1.500 ./usr/bin/unxz
+#82 1.500 ./usr/bin/unzip
+#82 1.500 ./usr/bin/uptime
+#82 1.500 ./usr/bin/usleep
+#82 1.500 ./usr/bin/uudecode
+#82 1.500 ./usr/bin/uuencode
+#82 1.500 ./usr/bin/vconfig
+#82 1.500 ./usr/bin/vi
+#82 1.501 ./usr/bin/vlock
+#82 1.501 ./usr/bin/volname
+#82 1.501 ./usr/bin/watch
+#82 1.501 ./usr/bin/watchdog
+#82 1.501 ./usr/bin/wc
+#82 1.501 ./usr/bin/wget
+#82 1.501 ./usr/bin/which
+#82 1.501 ./usr/bin/whoami
+#82 1.501 ./usr/bin/whois
+#82 1.501 ./usr/bin/xargs
+#82 1.501 ./usr/bin/xxd
+#82 1.501 ./usr/bin/xz
+#82 1.501 ./usr/bin/xzcat
+#82 1.501 ./usr/bin/yes
+#82 1.501 ./usr/bin/zcat
+#82 1.501 ./usr/bin/zcip
+#82 1.501 ./usr/include
+#82 1.501 ./usr/include/aio.h
+#82 1.501 ./usr/include/alloca.h
+#82 1.501 ./usr/include/ar.h
+#82 1.501 ./usr/include/arpa
+#82 1.501 ./usr/include/arpa/ftp.h
+#82 1.501 ./usr/include/arpa/inet.h
+#82 1.501 ./usr/include/arpa/nameser.h
+#82 1.501 ./usr/include/arpa/nameser_compat.h
+#82 1.502 ./usr/include/arpa/telnet.h
+#82 1.502 ./usr/include/arpa/tftp.h
+#82 1.502 ./usr/include/assert.h
+#82 1.502 ./usr/include/bits
+#82 1.502 ./usr/include/bits/alltypes.h
+#82 1.502 ./usr/include/bits/dirent.h
+#82 1.502 ./usr/include/bits/errno.h
+#82 1.502 ./usr/include/bits/fcntl.h
+#82 1.502 ./usr/include/bits/fenv.h
+#82 1.502 ./usr/include/bits/float.h
+#82 1.502 ./usr/include/bits/hwcap.h
+#82 1.502 ./usr/include/bits/io.h
+#82 1.502 ./usr/include/bits/ioctl.h
+#82 1.502 ./usr/include/bits/ioctl_fix.h
+#82 1.502 ./usr/include/bits/ipc.h
+#82 1.503 ./usr/include/bits/ipcstat.h
+#82 1.503 ./usr/include/bits/kd.h
+#82 1.503 ./usr/include/bits/limits.h
+#82 1.503 ./usr/include/bits/link.h
+#82 1.503 ./usr/include/bits/mman.h
+#82 1.503 ./usr/include/bits/msg.h
+#82 1.503 ./usr/include/bits/poll.h
+#82 1.503 ./usr/include/bits/posix.h
+#82 1.503 ./usr/include/bits/ptrace.h
+#82 1.503 ./usr/include/bits/reg.h
+#82 1.503 ./usr/include/bits/resource.h
+#82 1.503 ./usr/include/bits/sem.h
+#82 1.503 ./usr/include/bits/setjmp.h
+#82 1.503 ./usr/include/bits/shm.h
+#82 1.504 ./usr/include/bits/signal.h
+#82 1.504 ./usr/include/bits/socket.h
+#82 1.504 ./usr/include/bits/soundcard.h
+#82 1.504 ./usr/include/bits/stat.h
+#82 1.504 ./usr/include/bits/statfs.h
+#82 1.504 ./usr/include/bits/stdint.h
+#82 1.505 ./usr/include/bits/syscall.h
+#82 1.505 ./usr/include/bits/termios.h
+#82 1.505 ./usr/include/bits/user.h
+#82 1.505 ./usr/include/bits/vt.h
+#82 1.505 ./usr/include/byteswap.h
+#82 1.505 ./usr/include/complex.h
+#82 1.506 ./usr/include/cpio.h
+#82 1.506 ./usr/include/crypt.h
+#82 1.506 ./usr/include/ctype.h
+#82 1.506 ./usr/include/dirent.h
+#82 1.506 ./usr/include/dlfcn.h
+#82 1.506 ./usr/include/elf.h
+#82 1.506 ./usr/include/endian.h
+#82 1.506 ./usr/include/err.h
+#82 1.506 ./usr/include/errno.h
+#82 1.507 ./usr/include/fcntl.h
+#82 1.507 ./usr/include/features.h
+#82 1.507 ./usr/include/fenv.h
+#82 1.507 ./usr/include/float.h
+#82 1.507 ./usr/include/fmtmsg.h
+#82 1.507 ./usr/include/fnmatch.h
+#82 1.507 ./usr/include/ftw.h
+#82 1.507 ./usr/include/getopt.h
+#82 1.507 ./usr/include/glob.h
+#82 1.507 ./usr/include/grp.h
+#82 1.507 ./usr/include/iconv.h
+#82 1.507 ./usr/include/ifaddrs.h
+#82 1.508 ./usr/include/inttypes.h
+#82 1.508 ./usr/include/iso646.h
+#82 1.508 ./usr/include/langinfo.h
+#82 1.508 ./usr/include/lastlog.h
+#82 1.508 ./usr/include/libgen.h
+#82 1.508 ./usr/include/libintl.h
+#82 1.508 ./usr/include/limits.h
+#82 1.508 ./usr/include/link.h
+#82 1.508 ./usr/include/locale.h
+#82 1.508 ./usr/include/malloc.h
+#82 1.508 ./usr/include/math.h
+#82 1.508 ./usr/include/memory.h
+#82 1.508 ./usr/include/mntent.h
+#82 1.508 ./usr/include/monetary.h
+#82 1.508 ./usr/include/mqueue.h
+#82 1.508 ./usr/include/net
+#82 1.509 ./usr/include/net/ethernet.h
+#82 1.509 ./usr/include/net/if.h
+#82 1.509 ./usr/include/net/if_arp.h
+#82 1.509 ./usr/include/net/route.h
+#82 1.509 ./usr/include/netdb.h
+#82 1.509 ./usr/include/netinet
+#82 1.509 ./usr/include/netinet/ether.h
+#82 1.509 ./usr/include/netinet/icmp6.h
+#82 1.509 ./usr/include/netinet/if_ether.h
+#82 1.510 ./usr/include/netinet/igmp.h
+#82 1.510 ./usr/include/netinet/in.h
+#82 1.510 ./usr/include/netinet/in_systm.h
+#82 1.510 ./usr/include/netinet/ip.h
+#82 1.510 ./usr/include/netinet/ip6.h
+#82 1.510 ./usr/include/netinet/ip_icmp.h
+#82 1.511 ./usr/include/netinet/tcp.h
+#82 1.511 ./usr/include/netinet/udp.h
+#82 1.511 ./usr/include/netpacket
+#82 1.511 ./usr/include/netpacket/packet.h
+#82 1.511 ./usr/include/nl_types.h
+#82 1.511 ./usr/include/paths.h
+#82 1.511 ./usr/include/poll.h
+#82 1.511 ./usr/include/pthread.h
+#82 1.511 ./usr/include/pty.h
+#82 1.511 ./usr/include/pwd.h
+#82 1.511 ./usr/include/regex.h
+#82 1.511 ./usr/include/resolv.h
+#82 1.512 ./usr/include/sched.h
+#82 1.512 ./usr/include/scsi
+#82 1.512 ./usr/include/scsi/scsi.h
+#82 1.512 ./usr/include/scsi/scsi_ioctl.h
+#82 1.512 ./usr/include/scsi/sg.h
+#82 1.512 ./usr/include/search.h
+#82 1.512 ./usr/include/semaphore.h
+#82 1.512 ./usr/include/setjmp.h
+#82 1.512 ./usr/include/shadow.h
+#82 1.512 ./usr/include/signal.h
+#82 1.512 ./usr/include/spawn.h
+#82 1.512 ./usr/include/stdalign.h
+#82 1.512 ./usr/include/stdarg.h
+#82 1.513 ./usr/include/stdbool.h
+#82 1.513 ./usr/include/stdc-predef.h
+#82 1.513 ./usr/include/stddef.h
+#82 1.513 ./usr/include/stdint.h
+#82 1.513 ./usr/include/stdio.h
+#82 1.513 ./usr/include/stdio_ext.h
+#82 1.513 ./usr/include/stdlib.h
+#82 1.513 ./usr/include/stdnoreturn.h
+#82 1.513 ./usr/include/string.h
+#82 1.513 ./usr/include/strings.h
+#82 1.513 ./usr/include/stropts.h
+#82 1.513 ./usr/include/sys
+#82 1.513 ./usr/include/sys/acct.h
+#82 1.513 ./usr/include/sys/auxv.h
+#82 1.513 ./usr/include/sys/cachectl.h
+#82 1.513 ./usr/include/sys/dir.h
+#82 1.513 ./usr/include/sys/epoll.h
+#82 1.513 ./usr/include/sys/errno.h
+#82 1.514 ./usr/include/sys/eventfd.h
+#82 1.514 ./usr/include/sys/fanotify.h
+#82 1.514 ./usr/include/sys/fcntl.h
+#82 1.514 ./usr/include/sys/file.h
+#82 1.514 ./usr/include/sys/fsuid.h
+#82 1.514 ./usr/include/sys/inotify.h
+#82 1.514 ./usr/include/sys/io.h
+#82 1.514 ./usr/include/sys/ioctl.h
+#82 1.514 ./usr/include/sys/ipc.h
+#82 1.514 ./usr/include/sys/kd.h
+#82 1.514 ./usr/include/sys/klog.h
+#82 1.514 ./usr/include/sys/membarrier.h
+#82 1.514 ./usr/include/sys/mman.h
+#82 1.514 ./usr/include/sys/mount.h
+#82 1.514 ./usr/include/sys/msg.h
+#82 1.515 ./usr/include/sys/mtio.h
+#82 1.515 ./usr/include/sys/param.h
+#82 1.515 ./usr/include/sys/personality.h
+#82 1.515 ./usr/include/sys/poll.h
+#82 1.515 ./usr/include/sys/prctl.h
+#82 1.515 ./usr/include/sys/procfs.h
+#82 1.515 ./usr/include/sys/ptrace.h
+#82 1.515 ./usr/include/sys/quota.h
+#82 1.515 ./usr/include/sys/random.h
+#82 1.515 ./usr/include/sys/reboot.h
+#82 1.515 ./usr/include/sys/reg.h
+#82 1.515 ./usr/include/sys/resource.h
+#82 1.515 ./usr/include/sys/select.h
+#82 1.516 ./usr/include/sys/sem.h
+#82 1.516 ./usr/include/sys/sendfile.h
+#82 1.516 ./usr/include/sys/shm.h
+#82 1.516 ./usr/include/sys/signal.h
+#82 1.516 ./usr/include/sys/signalfd.h
+#82 1.516 ./usr/include/sys/socket.h
+#82 1.516 ./usr/include/sys/soundcard.h
+#82 1.516 ./usr/include/sys/stat.h
+#82 1.516 ./usr/include/sys/statfs.h
+#82 1.516 ./usr/include/sys/statvfs.h
+#82 1.516 ./usr/include/sys/stropts.h
+#82 1.516 ./usr/include/sys/swap.h
+#82 1.516 ./usr/include/sys/syscall.h
+#82 1.516 ./usr/include/sys/sysinfo.h
+#82 1.516 ./usr/include/sys/syslog.h
+#82 1.516 ./usr/include/sys/sysmacros.h
+#82 1.516 ./usr/include/sys/termios.h
+#82 1.516 ./usr/include/sys/time.h
+#82 1.516 ./usr/include/sys/timeb.h
+#82 1.516 ./usr/include/sys/timerfd.h
+#82 1.516 ./usr/include/sys/times.h
+#82 1.516 ./usr/include/sys/timex.h
+#82 1.516 ./usr/include/sys/ttydefaults.h
+#82 1.516 ./usr/include/sys/types.h
+#82 1.516 ./usr/include/sys/ucontext.h
+#82 1.516 ./usr/include/sys/uio.h
+#82 1.516 ./usr/include/sys/un.h
+#82 1.516 ./usr/include/sys/user.h
+#82 1.516 ./usr/include/sys/utsname.h
+#82 1.517 ./usr/include/sys/vfs.h
+#82 1.517 ./usr/include/sys/vt.h
+#82 1.517 ./usr/include/sys/wait.h
+#82 1.517 ./usr/include/sys/xattr.h
+#82 1.517 ./usr/include/syscall.h
+#82 1.517 ./usr/include/sysexits.h
+#82 1.517 ./usr/include/syslog.h
+#82 1.517 ./usr/include/tar.h
+#82 1.517 ./usr/include/termios.h
+#82 1.517 ./usr/include/tgmath.h
+#82 1.517 ./usr/include/threads.h
+#82 1.517 ./usr/include/time.h
+#82 1.517 ./usr/include/uchar.h
+#82 1.517 ./usr/include/ucontext.h
+#82 1.517 ./usr/include/ulimit.h
+#82 1.517 ./usr/include/unistd.h
+#82 1.518 ./usr/include/utime.h
+#82 1.518 ./usr/include/utmp.h
+#82 1.518 ./usr/include/utmpx.h
+#82 1.518 ./usr/include/values.h
+#82 1.518 ./usr/include/wait.h
+#82 1.518 ./usr/include/wchar.h
+#82 1.518 ./usr/include/wctype.h
+#82 1.518 ./usr/include/wordexp.h
+#82 1.518 ./usr/include/zconf.h
+#82 1.521 ./usr/include/zlib.h
+#82 1.521 ./usr/lib
+#82 1.521 ./usr/lib/Scrt1.o
+#82 1.521 ./usr/lib/crt1.o
+#82 1.521 ./usr/lib/crti.o
+#82 1.521 ./usr/lib/crtn.o
+#82 1.731 ./usr/lib/ld-musl-x86_64.so.1
+#82 2.040 ./usr/lib/libc.a
+#82 2.040 ./usr/lib/libc.musl-x86_64.so.1
+#82 2.040 ./usr/lib/libc.so
+#82 2.040 ./usr/lib/libcrypt.a
+#82 2.040 ./usr/lib/libdl.a
+#82 2.040 ./usr/lib/libm.a
+#82 2.040 ./usr/lib/libpthread.a
+#82 2.040 ./usr/lib/libresolv.a
+#82 2.040 ./usr/lib/librt.a
+#82 2.040 ./usr/lib/libutil.a
+#82 2.040 ./usr/lib/libxnet.a
+#82 2.047 ./usr/lib/libz.a
+#82 2.047 ./usr/lib/libz.so
+#82 2.047 ./usr/lib/libz.so.1
+#82 2.053 ./usr/lib/libz.so.1.3.1
+#82 2.053 ./usr/lib/pkgconfig
+#82 2.053 ./usr/lib/pkgconfig/zlib.pc
+#82 2.053 ./usr/lib/rcrt1.o
+#82 2.053 ./usr/lib64
+#82 2.053 ./usr/share
+#82 2.053 ./usr/share/man
+#82 2.053 ./usr/share/man/man3
+#82 2.053 ./usr/share/man/man3/zlib.3
+#82 2.053 ./var
+#82 2.053 ./var/lock
+#82 2.053 ./var/run
+#82 2.053 ./var/spool
+#82 2.053 ./var/spool/mail
+#82 2.053 ./var/tmp
+#82 2.053 39408 blocks
+#82 DONE 2.2s
+
+#83 [build 18/19] WORKDIR /build_eif
+#83 DONE 0.0s
+
+#84 [build 19/19] RUN eif_build 	--kernel /bzImage 	--kernel_config /linux.config 	--ramdisk /build_cpio/rootfs.cpio 	--pcrs_output /nitro.pcrs 	--output /nitro.eif 	--cmdline 'reboot=k initrd=0x2000000,3228672 root=/dev/ram0 panic=1 pci=off nomodules console=ttyS0 i8042.noaux i8042.nomux i8042.nopnp i8042.dumbkbd'
+#84 0.394 Output written into /nitro.eif
+#84 0.445 BootMeasurement: Sha384 { ... }: {"HashAlgorithm": "Sha384 { ... }", "PCR0": "dcbd8c6997f60e9a7549db0e74d3f4ff117b3cd5de733087ab45493356b09d4b0cf57112f956bb25c5354f41eeef5a11", "PCR1": "dcbd8c6997f60e9a7549db0e74d3f4ff117b3cd5de733087ab45493356b09d4b0cf57112f956bb25c5354f41eeef5a11", "PCR2": "21b9efbc184807662e966d34f390821309eeac6802309798826296bf3e8bec7c10edb30948c90ba67310f7b964fc500a"}
+#84 DONE 0.6s
+
+#85 [install 2/4] COPY --from=build /nitro.eif .
+#85 DONE 0.2s
+
+#86 [install 3/4] COPY --from=build /nitro.pcrs .
+#86 DONE 0.0s
+
+#87 [install 4/4] COPY --from=build /build_cpio/rootfs.cpio .
+#87 DONE 0.1s
+
+#88 [package 1/1] COPY --from=install /rootfs .
+#88 CACHED
+
+#89 exporting to image
+#89 exporting layers done
+#89 exporting manifest sha256:66513911e6540960f66b35119bd6396b6d20ac8cf8df68245b5f958260a40355 0.0s done
+#89 exporting config sha256:b4d667e547493d20004e3cc2bcc03d5f5c9a947cd0bd04bf5949f8072a6c37b3 done
+#89 exporting attestation manifest sha256:6e5ef4251c6cd76b3cb876054fac8a26bb0daa86b0b4be103834233e0d869af5 0.0s done
+#89 exporting manifest list sha256:d1af0594e1140423cc54bd92b19af4bbab9b61ed3d6f6322f5d632171c70eb82 0.0s done
+#89 naming to moby-dangling@sha256:d1af0594e1140423cc54bd92b19af4bbab9b61ed3d6f6322f5d632171c70eb82 done
+#89 unpacking to moby-dangling@sha256:d1af0594e1140423cc54bd92b19af4bbab9b61ed3d6f6322f5d632171c70eb82 done
+#89 DONE 0.1s
+
+ [33m3 warnings found (use docker --debug to expand):
+[0m - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 22)
+ - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 49)
+ - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 100)
+./usr/include/values.h
+#102 1.719 ./usr/include/wait.h
+#102 1.719 ./usr/include/wchar.h
+#102 1.719 ./usr/include/wctype.h
+#102 1.719 ./usr/include/wordexp.h
+#102 1.721 ./usr/include/zconf.h
+#102 1.724 ./usr/include/zlib.h
+#102 1.724 ./usr/lib
+#102 1.724 ./usr/lib/Scrt1.o
+#102 1.724 ./usr/lib/crt1.o
+#102 1.724 ./usr/lib/crti.o
+#102 1.724 ./usr/lib/crtn.o
+#102 1.966 ./usr/lib/ld-musl-x86_64.so.1
+#102 2.392 ./usr/lib/libc.a
+#102 2.392 ./usr/lib/libc.musl-x86_64.so.1
+#102 2.392 ./usr/lib/libc.so
+#102 2.392 ./usr/lib/libcrypt.a
+#102 2.392 ./usr/lib/libdl.a
+#102 2.392 ./usr/lib/libm.a
+#102 2.392 ./usr/lib/libpthread.a
+#102 2.392 ./usr/lib/libresolv.a
+#102 2.392 ./usr/lib/librt.a
+#102 2.392 ./usr/lib/libutil.a
+#102 2.392 ./usr/lib/libxnet.a
+#102 2.401 ./usr/lib/libz.a
+#102 2.401 ./usr/lib/libz.so
+#102 2.401 ./usr/lib/libz.so.1
+#102 2.410 ./usr/lib/libz.so.1.3.1
+#102 2.410 ./usr/lib/pkgconfig
+#102 2.410 ./usr/lib/pkgconfig/zlib.pc
+#102 2.410 ./usr/lib/rcrt1.o
+#102 2.410 ./usr/lib64
+#102 2.410 ./usr/share
+#102 2.410 ./usr/share/man
+#102 2.410 ./usr/share/man/man3
+#102 2.410 ./usr/share/man/man3/zlib.3
+#102 2.410 ./var
+#102 2.410 ./var/lock
+#102 2.410 ./var/run
+#102 2.410 ./var/spool
+#102 2.410 ./var/spool/mail
+#102 2.410 ./var/tmp
+#102 2.410 39408 blocks
+#102 DONE 2.7s
+
+#103 [build 18/19] WORKDIR /build_eif
+#103 DONE 1.6s
+
+#104 [build 19/19] RUN eif_build 	--kernel /bzImage 	--kernel_config /linux.config 	--ramdisk /build_cpio/rootfs.cpio 	--pcrs_output /nitro.pcrs 	--output /nitro.eif 	--cmdline 'reboot=k initrd=0x2000000,3228672 root=/dev/ram0 panic=1 pci=off nomodules console=ttyS0 i8042.noaux i8042.nomux i8042.nopnp i8042.dumbkbd'
+#104 0.638 Output written into /nitro.eif
+#104 0.702 BootMeasurement: Sha384 { ... }: {"HashAlgorithm": "Sha384 { ... }", "PCR0": "dcbd8c6997f60e9a7549db0e74d3f4ff117b3cd5de733087ab45493356b09d4b0cf57112f956bb25c5354f41eeef5a11", "PCR1": "dcbd8c6997f60e9a7549db0e74d3f4ff117b3cd5de733087ab45493356b09d4b0cf57112f956bb25c5354f41eeef5a11", "PCR2": "21b9efbc184807662e966d34f390821309eeac6802309798826296bf3e8bec7c10edb30948c90ba67310f7b964fc500a"}
+#104 DONE 0.9s
+
+#105 [install 2/4] COPY --from=build /nitro.eif .
+#105 DONE 0.2s
+
+#106 [install 3/4] COPY --from=build /nitro.pcrs .
+#106 DONE 0.0s
+
+#107 [install 4/4] COPY --from=build /build_cpio/rootfs.cpio .
+#107 DONE 0.1s
+
+#108 [package 1/1] COPY --from=install /rootfs .
+#108 DONE 0.0s
+
+#109 exporting to image
+#109 exporting layers
+#109 exporting layers 0.8s done
+#109 exporting manifest sha256:66513911e6540960f66b35119bd6396b6d20ac8cf8df68245b5f958260a40355 0.0s done
+#109 exporting config sha256:b4d667e547493d20004e3cc2bcc03d5f5c9a947cd0bd04bf5949f8072a6c37b3 0.0s done
+#109 exporting attestation manifest sha256:9a7d7553888b05459f989559aaae537962228c844cc7990d92e46387db215386 0.0s done
+#109 exporting manifest list sha256:2027e5502d6d1791867ef28c5703838040aa355e4c315a328bd0a962ab1b2be4 0.0s done
+#109 naming to moby-dangling@sha256:2027e5502d6d1791867ef28c5703838040aa355e4c315a328bd0a962ab1b2be4
+#109 naming to moby-dangling@sha256:2027e5502d6d1791867ef28c5703838040aa355e4c315a328bd0a962ab1b2be4 done
+#109 unpacking to moby-dangling@sha256:2027e5502d6d1791867ef28c5703838040aa355e4c315a328bd0a962ab1b2be4 0.1s done
+#109 DONE 1.0s
+
+ [33m3 warnings found (use docker --debug to expand):
+[0m - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 22)
+ - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 49)
+ - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 100)
