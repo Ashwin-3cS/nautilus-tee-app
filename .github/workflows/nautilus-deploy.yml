@@ -116,19 +116,22 @@ jobs:
 
             # ── Start VSOCK bridge (restart if already running) ───────
             echo "=== Starting VSOCK bridge ==="
-            sudo pkill -f "socat.*VSOCK" 2>/dev/null || true
+            sudo systemctl stop nautilus-bridge.service 2>/dev/null || true
+            sudo systemctl stop nautilus-logs.service 2>/dev/null || true
             sudo pkill -f "socat.*4000" 2>/dev/null || true
             sleep 1
 
             ENCLAVE_CID=$(sudo nitro-cli describe-enclaves | jq -r '.[0].EnclaveCID')
-
-            # Launch bridge processes fully detached via setsid
             touch /tmp/enclave.log
-            setsid socat TCP-LISTEN:4000,reuseaddr,fork VSOCK-CONNECT:$ENCLAVE_CID:4000 </dev/null >/dev/null 2>&1 &
-            setsid socat VSOCK-LISTEN:5000,fork,reuseaddr OPEN:/tmp/enclave.log,creat,append </dev/null >/dev/null 2>&1 &
-            sleep 2
+
+            # Use systemd-run to create services that survive SSH session close
+            sudo systemd-run --unit=nautilus-bridge --remain-after-exit=false \
+              socat TCP-LISTEN:4000,reuseaddr,fork VSOCK-CONNECT:$ENCLAVE_CID:4000
+            sudo systemd-run --unit=nautilus-logs --remain-after-exit=false \
+              socat VSOCK-LISTEN:5000,fork,reuseaddr OPEN:/tmp/enclave.log,creat,append
 
             echo ""
             echo "Deployment complete."
             echo "  Enclave CID: $ENCLAVE_CID"
+            echo "  Bridge: sudo systemctl status nautilus-bridge"
             echo "  Logs: tail -f /tmp/enclave.log"
