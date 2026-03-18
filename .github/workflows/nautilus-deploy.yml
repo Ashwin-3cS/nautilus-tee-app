@@ -83,27 +83,23 @@ jobs:
             command -v jq    &> /dev/null || sudo yum install -y jq
 
             # ── Build the EIF on EC2 ──────────────────────────────────
+            # The Containerfile uses eif_build internally — the EIF is extracted
+            # via --output, NOT via nitro-cli build-enclave.
             echo "=== Building Enclave Image ==="
             cd ~/nautilus-app
             mkdir -p out
 
-            # Run docker with sg ne group context
             sudo docker build \
-              --tag local/enclaveos:${{ github.sha }} \
               --platform linux/amd64 \
               --progress=plain \
+              --output type=local,dest=out/ \
               -f Containerfile \
               . 2>&1 | tee out/docker.log
 
-            sudo nitro-cli build-enclave \
-              --docker-uri local/enclaveos:${{ github.sha }} \
-              --output-file out/nautilus.eif \
-              2>&1 | tee out/build.log
-
-            # Extract PCRs
-            grep '^{' out/build.log | tail -1 > out/nautilus.pcrs.json || true
+            echo "=== EIF built ==="
+            ls -lh out/
             echo "=== PCR Measurements ==="
-            cat out/nautilus.pcrs.json || true
+            cat out/nitro.pcrs || true
 
             # ── Terminate old enclave and start new one ───────────────
             echo "=== Terminating existing enclaves ==="
@@ -113,7 +109,7 @@ jobs:
             sudo nitro-cli run-enclave \
               --cpu-count 2 \
               --memory 4096 \
-              --eif-path ~/nautilus-app/out/nautilus.eif
+              --eif-path ~/nautilus-app/out/nitro.eif
 
             echo "=== Running enclaves ==="
             sudo nitro-cli describe-enclaves
