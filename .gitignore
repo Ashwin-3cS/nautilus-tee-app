@@ -5,3 +5,4 @@
 *.pcrs
 enclave.log
 .env
+# Do NOT ignore Cargo.lock — needed for reproducible builds

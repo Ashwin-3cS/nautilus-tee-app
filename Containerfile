@@ -22,7 +22,7 @@ FROM stagex/user-socat:local@sha256:acef3dacc5b805d0eaaae0c2d13f567bf168620aea98
 FROM scratch as base
 ENV TARGET=x86_64-unknown-linux-musl
 ENV RUSTFLAGS="-C target-feature=+crt-static"
-ENV CARGOFLAGS="--locked --no-default-features --release --target ${TARGET}"
+ENV CARGOFLAGS="--no-default-features --release --target ${TARGET}"
 
 COPY --from=core-busybox . /
 COPY --from=core-musl . /
@@ -50,12 +50,11 @@ FROM base as build
 COPY . .
 
 # Build workspace crates (init, aws, system)
-RUN cargo build --workspace --locked --no-default-features --release --target x86_64-unknown-linux-musl
+RUN cargo build --workspace --no-default-features --release --target x86_64-unknown-linux-musl
 
 # Build sign-server with AWS NSM support
 WORKDIR /src/sign-server
 ENV RUSTFLAGS="-C target-feature=+crt-static -C relocation-model=static"
-RUN rm -f Cargo.lock
 RUN cargo build --release --target x86_64-unknown-linux-musl --features aws
 
 # Package into initramfs
