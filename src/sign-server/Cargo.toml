@@ -36,3 +36,11 @@ aws = ["aws-nitro-enclaves-nsm-api"]
 lto = true
 codegen-units = 1
 panic = "abort"
+
+# Pin to versions compatible with rustc 1.85.0 (used by stagex core-rust image)
+[dependencies.darling]
+version = "=0.20.10"
+
+[dependencies.serde_with]
+version = "=3.11.0"
+features = ["macros"]
