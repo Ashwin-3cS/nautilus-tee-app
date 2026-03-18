@@ -122,34 +122,10 @@ jobs:
             ENCLAVE_CID=$(sudo nitro-cli describe-enclaves | jq -r '.[0].EnclaveCID')
             touch /tmp/enclave.log
 
-            # Write a systemd service file — survives SSH close, auto-restarts
-            sudo tee /etc/systemd/system/nautilus-bridge.service > /dev/null <<SVCEOF
-[Unit]
-Description=Nautilus VSOCK Bridge (TCP:4000 to Enclave VSOCK)
-After=network.target
+            # Write systemd service files using printf (heredocs break YAML)
+            printf '[Unit]\nDescription=Nautilus VSOCK Bridge\nAfter=network.target\n\n[Service]\nExecStart=/usr/bin/socat TCP-LISTEN:4000,reuseaddr,fork VSOCK-CONNECT:%s:4000\nRestart=always\nRestartSec=2\n\n[Install]\nWantedBy=multi-user.target\n' "$ENCLAVE_CID" | sudo tee /etc/systemd/system/nautilus-bridge.service > /dev/null
 
-[Service]
-ExecStart=/usr/bin/socat TCP-LISTEN:4000,reuseaddr,fork VSOCK-CONNECT:${ENCLAVE_CID}:4000
-Restart=always
-RestartSec=2
-
-[Install]
-WantedBy=multi-user.target
-SVCEOF
-
-            sudo tee /etc/systemd/system/nautilus-logs.service > /dev/null <<LOGEOF
-[Unit]
-Description=Nautilus Enclave Log Collector
-After=network.target
-
-[Service]
-ExecStart=/usr/bin/socat VSOCK-LISTEN:5000,fork,reuseaddr OPEN:/tmp/enclave.log,creat,append
-Restart=always
-RestartSec=2
-
-[Install]
-WantedBy=multi-user.target
-LOGEOF
+            printf '[Unit]\nDescription=Nautilus Log Collector\nAfter=network.target\n\n[Service]\nExecStart=/usr/bin/socat VSOCK-LISTEN:5000,fork,reuseaddr OPEN:/tmp/enclave.log,creat,append\nRestart=always\nRestartSec=2\n\n[Install]\nWantedBy=multi-user.target\n' | sudo tee /etc/systemd/system/nautilus-logs.service > /dev/null
 
             sudo systemctl daemon-reload
             sudo systemctl restart nautilus-bridge.service
