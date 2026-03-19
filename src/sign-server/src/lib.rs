@@ -2,14 +2,14 @@ use axum::http::StatusCode;
 use axum::response::IntoResponse;
 use axum::response::Response;
 use axum::Json;
-use fastcrypto::ed25519::Ed25519KeyPair;
+use nautilus_enclave::EnclaveKeyPair;
 use serde_json::json;
 
 pub mod common;
 
 /// App state — holds the ephemeral keypair generated on boot.
 pub struct AppState {
-    pub eph_kp: Ed25519KeyPair,
+    pub eph_kp: EnclaveKeyPair,
 }
 
 /// Enclave errors enum.
