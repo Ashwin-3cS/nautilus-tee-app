@@ -98,7 +98,7 @@ jobs:
             --platform linux/amd64 \
             --progress=plain \
             --output type=local,dest=out/ \
-            -f Dockerfile . 2>&1 | tee out/docker.log
+            -f Containerfile . 2>&1 | tee out/docker.log
           echo "--- PCR Measurements ---"
           cat out/nitro.pcrs || true
           REMOTE
