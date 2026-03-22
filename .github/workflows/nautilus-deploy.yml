@@ -93,12 +93,12 @@ jobs:
           SSH_OPTS="-o StrictHostKeyChecking=no -o ServerAliveInterval=30 -o ServerAliveCountMax=10"
           ssh $SSH_OPTS -i /tmp/deploy_key "$EC2_USER@$EC2_HOST" 'bash -s' << 'REMOTE'
           set -e
-          cd ~/nautilus-app && mkdir -p out
+          cd ~/nautilus-app && rm -rf out && mkdir -p out
           sudo docker build \
             --platform linux/amd64 \
             --progress=plain \
             --output type=local,dest=out/ \
-            -f Containerfile . 2>&1 | tee out/docker.log
+            -f Dockerfile . 2>&1 | tee out/docker.log
           echo "--- PCR Measurements ---"
           cat out/nitro.pcrs || true
           REMOTE
@@ -149,7 +149,22 @@ jobs:
           SSH_OPTS="-o StrictHostKeyChecking=no -o ServerAliveInterval=30 -o ServerAliveCountMax=10"
           ssh $SSH_OPTS -i /tmp/deploy_key "$EC2_USER@$EC2_HOST" 'bash -s' << 'REMOTE'
           set -e
-          CID=$(sudo nitro-cli describe-enclaves | jq -r '.[0].EnclaveCID')
+          # Wait for enclave CID to become available
+          for i in 1 2 3 4 5; do
+            CID=$(sudo nitro-cli describe-enclaves | jq -r '.[0].EnclaveCID // empty')
+            [ -n "$CID" ] && break
+            echo "Waiting for enclave CID... (attempt $i)"
+            sleep 2
+          done
+          if [ -z "$CID" ]; then
+            echo "ERROR: Could not get enclave CID"
+            sudo nitro-cli describe-enclaves
+            exit 1
+          fi
+
+          # Kill any stale socat processes
+          sudo pkill -f "socat.*4000" 2>/dev/null || true
+          sudo pkill -f "socat.*5000" 2>/dev/null || true
 
           sudo tee /etc/systemd/system/nautilus-bridge.service > /dev/null <<EOF
           [Unit]
